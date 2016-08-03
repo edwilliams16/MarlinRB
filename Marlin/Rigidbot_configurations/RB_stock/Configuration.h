@@ -123,6 +123,7 @@
 // Please choose the name from boards.h that matches your setup
 // for Rigidbot version 1 : #define MOTHERBOARD BOARD_RIGIDBOARD
 // for Rigidbot Version 2 : #define MOTHERBOARD BOARD_RIGIDBOARD_V2
+// If you have RB2 hardware with inverted x-axis motor, set INVERT_X_DIR below
 
 #ifndef MOTHERBOARD
   #define MOTHERBOARD BOARD_RIGIDBOARD
@@ -593,7 +594,8 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR true
+#define INVERT_X_DIR true   // RB1
+//#define INVERT_X_DIR false // RB2
 #define INVERT_Y_DIR false
 #define INVERT_Z_DIR false
 
